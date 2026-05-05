@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work, Kendall Clark UX/UI Designer Portfolio | New York</title>
+  <meta name="description" content="Case studies and design work by Kendall Clark, fintech UX at American Express and Citi, mobile app design, brand identity, and AI product design." />
+  <meta name="keywords" content="UX Case Studies, Kendall Clark Portfolio, Fintech Design, AmEx UX, Mobile App Design, Brand Identity, AI Product Design" />
+  <link rel="canonical" href="https://kendallclark.design/work" />
+  <meta property="og:title" content="Work, Kendall Clark UX/UI Designer Portfolio" />
+  <meta property="og:description" content="Case studies in fintech UX, mobile app design, brand identity, and AI product design." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles/global.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Kendall Clark, Home">KC<span>.</span></a>
+      <div class="nav-links" role="list">
+        <a href="work.html" class="nav-link active" role="listitem" aria-current="page">Work</a>
+        <a href="about.html" class="nav-link" role="listitem">About</a>
+        <a href="services.html" class="nav-link" role="listitem">Services</a>
+        <a href="resume.html" class="nav-link" role="listitem">Resume</a>
+        <a href="contact.html" class="nav-cta" aria-label="Hire Kendall Clark">Hire Me</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section style="padding-top:calc(var(--nav-h) + 80px); padding-bottom:64px; padding-left:clamp(24px,5vw,64px); padding-right:clamp(24px,5vw,64px);" aria-label="Work page hero">
+    <div style="max-width:1400px; margin:0 auto;">
+      <span class="section-label reveal">Selected Work</span>
+      <h1 class="display-lg reveal reveal-delay-1" style="max-width:800px;">Design that solves.<br>Stories that stick.</h1>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FILTER BAR -->
+  <section style="padding:32px clamp(24px,5vw,64px);" aria-label="Filter projects">
+    <div style="max-width:1400px; margin:0 auto; display:flex; gap:10px; flex-wrap:wrap;" role="group" aria-label="Project category filters">
+      <button class="tag active" data-filter="all" aria-pressed="true">All</button>
+      <button class="tag" data-filter="uxui" aria-pressed="false">UX/UI</button>
+      <button class="tag" data-filter="fintech" aria-pressed="false">Fintech</button>
+      <button class="tag" data-filter="mobile" aria-pressed="false">Mobile</button>
+      <button class="tag" data-filter="brand" aria-pressed="false">Brand</button>
+      <button class="tag" data-filter="ai" aria-pressed="false">AI</button>
+    </div>
+  </section>
+
+  <!-- PROJECT GRID -->
+  <section style="padding:0 clamp(24px,5vw,64px) 112px;" aria-label="All projects">
+    <div style="max-width:1400px; margin:0 auto; display:grid; grid-template-columns:repeat(2,1fr); gap:2px;">
+
+      <!-- 01 AmEx -->
+      <a href="case-study-amex.html"
+         class="project-card grid-col-2 reveal"
+         data-category="uxui fintech"
+         data-watermark="AMEX"
+         style="aspect-ratio:21/9;"
+         aria-label="American Express Fraud Investigation Platform, Enterprise UX, Fintech">
+        <div class="project-card-bg" style="background:url('images/amex-cover.jpg') center/cover no-repeat, linear-gradient(135deg, #006FCF 0%, #003087 60%, #1a1f35 100%);"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-num" aria-hidden="true">01</div>
+        <div class="project-card-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="project-card-content">
+          <div class="project-card-tags">
+            <span class="project-card-tag">Enterprise UX</span>
+            <span class="project-card-tag">Fintech</span>
+            <span class="project-card-tag">Design Systems</span>
+          </div>
+          <div class="project-card-title">American Express, Fraud Investigation Platform</div>
+          <div class="project-card-sub">50% faster investigation time · 25% analyst efficiency gain</div>
+        </div>
+      </a>
+
+      <!-- 02 SwiftFinance -->
+      <a href="case-study-swiftfinance.html"
+         class="project-card reveal reveal-delay-1"
+         data-category="uxui fintech mobile"
+         data-watermark="SWIFT"
+         aria-label="SwiftFinance Mobile Banking Redesign, Mobile UX, Fintech">
+        <div class="project-card-bg" style="background:url('images/swift-cover.jpg') center/cover no-repeat, linear-gradient(135deg, #0D4F3C 0%, #0a2a20 60%, #080A0F 100%);"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-num" aria-hidden="true">02</div>
+        <div class="project-card-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="project-card-content">
+          <div class="project-card-tags">
+            <span class="project-card-tag">Mobile UX</span>
+            <span class="project-card-tag">Fintech</span>
+          </div>
+          <div class="project-card-title">SwiftFinance, Mobile Banking Redesign</div>
+          <div class="project-card-sub">61% increase in user satisfaction scores</div>
+        </div>
+      </a>
+
+      <!-- 03 Links -->
+      <a href="case-study-links.html"
+         class="project-card reveal reveal-delay-2"
+         data-category="uxui mobile"
+         data-watermark="LINKS"
+         aria-label="Links Community Social Platform, Mobile UX, iOS App">
+        <div class="project-card-bg" style="background:url('images/links-cover.jpg') center/cover no-repeat, linear-gradient(135deg, #3D1F7A 0%, #1a0e35 60%, #080A0F 100%);"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-num" aria-hidden="true">03</div>
+        <div class="project-card-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="project-card-content">
+          <div class="project-card-tags">
+            <span class="project-card-tag">Mobile UX</span>
+            <span class="project-card-tag">Social</span>
+            <span class="project-card-tag">iOS</span>
+          </div>
+          <div class="project-card-title">Links / Joinlinks, Community Social Platform</div>
+          <div class="project-card-sub">Lead UX · iOS App Store launch · 5-month engagement</div>
+        </div>
+      </a>
+
+      <!-- 04 Haus of Alt -->
+      <a href="case-study-hausofalt.html"
+         class="project-card grid-col-2 reveal"
+         data-category="brand uxui"
+         data-watermark="HAUS"
+         style="aspect-ratio:21/9;"
+         aria-label="Haus of Alt Brand Identity and E-Commerce, Brand, Shopify">
+        <div class="project-card-bg" style="background:url('https://hausofalt.com/cdn/shop/files/Untitled_Medium_Banner_US_Landscape_-3.png?v=1773734262') center/cover no-repeat, url('https://hausofalt.com/cdn/shop/files/117-2C5A6501.jpg?v=1771115495') center/cover no-repeat; background-color:#1a0a0a;"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-num" aria-hidden="true">04</div>
+        <div class="project-card-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="project-card-content">
+          <div class="project-card-tags">
+            <span class="project-card-tag">Brand Identity</span>
+            <span class="project-card-tag">E-Commerce</span>
+            <span class="project-card-tag">Shopify</span>
+          </div>
+          <div class="project-card-title">Haus of Alt, Brand Identity &amp; E-Commerce</div>
+          <div class="project-card-sub">Full creative universe · Founder + Creative Director</div>
+        </div>
+      </a>
+
+      <!-- 05 21 Connect Digital -->
+      <div class="project-card reveal"
+           data-category="uxui brand"
+           data-watermark="21C"
+           style="cursor:default;"
+           aria-label="21 Connect Digital Agency and Freelance Work">
+        <div class="project-card-bg" style="background:linear-gradient(135deg, #0a1f2e 0%, #061520 60%, #080A0F 100%);"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-num" aria-hidden="true">05</div>
+        <div class="project-card-content">
+          <div class="project-card-tags">
+            <span class="project-card-tag">UX/UI</span>
+            <span class="project-card-tag">Freelance</span>
+            <span class="project-card-tag">Agency</span>
+          </div>
+          <div class="project-card-title">21 Connect Digital, Agency &amp; Freelance Work</div>
+          <div class="project-card-sub">Founder · Brand identity, web design, Figma-to-code</div>
+        </div>
+      </div>
+
+      <!-- 06 AI Concept, COMING SOON -->
+      <div class="project-card reveal reveal-delay-1"
+           data-category="ai uxui"
+           data-watermark="AI"
+           style="cursor:default; opacity:0.7;"
+           aria-label="AI Product Design Concept, Coming Soon">
+        <div class="project-card-bg" style="background:linear-gradient(135deg, #0a0f1f 0%, #0d1220 60%, #080A0F 100%);"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-num" aria-hidden="true">06</div>
+        <div style="position:absolute; top:24px; right:24px; z-index:2; padding:5px 12px; background:var(--accent); border-radius:99px;">
+          <span style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:var(--bg); font-weight:400;">Coming Soon</span>
+        </div>
+        <div class="project-card-content">
+          <div class="project-card-tags">
+            <span class="project-card-tag">AI</span>
+            <span class="project-card-tag">UX</span>
+          </div>
+          <div class="project-card-title">AI Product Design Concept</div>
+          <div class="project-card-sub">LLM interface design · Conversational UI patterns</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-bg2" aria-label="Call to action">
+    <div class="section-inner">
+      <div class="cta-banner reveal">
+        <h2>Want to work together?</h2>
+        <p>Open to full-time roles, contract engagements, and select freelance projects.</p>
+        <div class="cta-actions">
+          <a href="mailto:kendallclarkdesign@gmail.com" class="btn btn-primary" aria-label="Email Kendall Clark">Send an Email</a>
+          <a href="contact.html" class="btn btn-outline" aria-label="Go to contact page">Contact Page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2025 Kendall Clark, UX/UI Designer, New York</span>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="work.html" class="footer-link">Work</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="services.html" class="footer-link">Services</a>
+        <a href="resume.html" class="footer-link">Resume</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </nav>
+      <div class="footer-status">
+        <div class="status-dot" aria-hidden="true"></div>
+        <span class="status-text">Available for opportunities</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* Filter aria-pressed sync */
+    document.querySelectorAll('[data-filter]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('[data-filter]').forEach(function(b) { b.setAttribute('aria-pressed','false'); });
+        btn.setAttribute('aria-pressed','true');
+      });
+    });
+  </script>
+</body>
+</html>
