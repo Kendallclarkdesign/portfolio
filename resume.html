@@ -4,22 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume, Kendall Clark UX/UI Designer | Download CV</title>
-  <meta name="description" content="Download Kendall Clark's resume. Available in 5 role-specific versions: Senior UX/UI Designer, UX + AI Product Designer, Front-End Developer, UI Designer, and UX Researcher." />
-  <meta name="keywords" content="Kendall Clark Resume, UX Designer Resume Download, AI Product Designer CV, Front-End Developer Resume NYC" />
+  <meta name="description" content="Download Kendall Clark's resume. Senior UX/UI Designer resume, with tailored versions available on request for Front-End Developer, UI Designer, and UX Researcher roles." />
+  <meta name="keywords" content="Kendall Clark Resume, UX Designer Resume Download, Front-End Developer Resume NYC" />
   <link rel="canonical" href="https://kendallclark.design/resume" />
   <meta property="og:title" content="Resume, Kendall Clark UX/UI Designer | Download CV" />
-  <meta property="og:description" content="5 role-specific resumes: Senior UX/UI Designer, UX + AI Product Designer, Front-End Developer, UI Designer, UX Researcher." />
+  <meta property="og:description" content="Senior UX/UI Designer resume, with tailored versions available on request." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="styles/global.css" />
+  <style>
+    @media (max-width: 768px) {
+      .resume-secondary-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
 </head>
 <body>
 
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
-
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Kendall Clark, Home">KC<span>.</span></a>
+      <a href="index.html" class="nav-logo" aria-label="Kendall Clark, Home">Kendall<span>.</span>Clark</a>
       <div class="nav-links" role="list">
         <a href="work.html" class="nav-link" role="listitem">Work</a>
         <a href="about.html" class="nav-link" role="listitem">About</a>
@@ -42,137 +44,70 @@
   </div>
 
   <!-- HERO -->
-  <section style="position:relative; padding-top:calc(var(--nav-h) + 80px); padding-bottom:80px; padding-left:clamp(24px,5vw,64px); padding-right:clamp(24px,5vw,64px);" aria-label="Resume page hero">
-    <div class="hero-grid-bg" aria-hidden="true"></div>
-    <div style="max-width:1400px; margin:0 auto; position:relative; z-index:1;">
-      <span class="section-label reveal">Resume Downloads</span>
-      <h1 class="display-md reveal reveal-delay-1">Pick your role.<br>Download the right resume.</h1>
-      <p class="text-xl reveal reveal-delay-2" style="max-width:640px; margin-top:24px; color:var(--text2);">
-        Five role-specific versions so your hiring manager sees exactly what they need to see. Each one is tailored to a specific type of position.
+  <section style="position:relative; padding-top:calc(var(--nav-h) + 72px); padding-bottom:64px; padding-left:clamp(24px,5vw,64px); padding-right:clamp(24px,5vw,64px);" aria-label="Resume page hero">
+    <div style="max-width:1280px; margin:0 auto;">
+      <span class="section-label reveal">Resume</span>
+      <h1 class="display-md reveal reveal-delay-1">Senior UX/UI Designer.</h1>
+      <p class="text-xl reveal reveal-delay-2" style="max-width:600px; margin-top:20px; color:var(--ink2);">
+        This is the resume I lead with. Tailored versions for Front-End Developer, UI Designer, and UX Researcher roles are below if one fits your opening better.
       </p>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- RESUME CARDS -->
-  <section class="section" aria-label="Resume download options">
+  <!-- PRIMARY RESUME -->
+  <section class="section" aria-label="Primary resume download">
     <div class="section-inner">
-      <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:2px;" class="resume-grid">
-
-        <!-- 01 Senior UX/UI -->
-        <div class="resume-card reveal" role="article" aria-label="Senior UX/UI Designer resume">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-            <div class="mono" style="color:var(--accent);">01</div>
-            <div style="width:40px; height:40px; background:rgba(200,241,53,0.1); border-radius:var(--radius); display:flex; align-items:center; justify-content:center;" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h7l3 3v9H3V2z" stroke="var(--accent)" stroke-width="1.2"/><path d="M10 2v3h3" stroke="var(--accent)" stroke-width="1.2"/><path d="M5 7h6M5 9.5h4" stroke="var(--accent)" stroke-width="1.2" stroke-linecap="round"/></svg>
-            </div>
+      <div class="resume-card primary reveal" role="article" aria-label="Senior UX/UI Designer resume" style="padding:48px 44px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px;">
+          <div>
+            <div class="mono" style="color:var(--accent); margin-bottom:10px;">Primary Resume</div>
+            <div class="resume-card-role" style="font-size:26px;">Senior UX/UI Designer</div>
+            <div class="resume-card-focus" style="margin-top:10px; max-width:520px;">End-to-end UX, design systems, fintech depth, stakeholder collaboration. Best for Senior IC, Lead Designer, and Product Designer roles.</div>
           </div>
-          <div class="resume-card-role">Senior UX/UI Designer</div>
-          <div class="resume-card-best">Best for: Senior IC, Lead Designer, Product Designer roles</div>
-          <div class="resume-card-focus">Focus: End-to-end UX, design systems, fintech depth, stakeholder collaboration and communication.</div>
           <a href="resumes/Kendall_Clark_Senior_UXUI_Designer_Resume.docx"
              class="btn btn-primary"
              download
+             style="white-space:nowrap;"
              aria-label="Download Senior UX/UI Designer resume">
             Download Resume
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- 02 UX + AI -->
-        <div class="resume-card reveal reveal-delay-1" role="article" aria-label="UX plus AI Product Designer resume">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-            <div class="mono" style="color:var(--accent2);">02</div>
-            <div style="width:40px; height:40px; background:rgba(123,92,240,0.1); border-radius:var(--radius); display:flex; align-items:center; justify-content:center;" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="var(--accent2)" stroke-width="1.2"/><path d="M5 8c0-1.7 1.3-3 3-3s3 1.3 3 3-1.3 3-3 3" stroke="var(--accent2)" stroke-width="1.2" stroke-linecap="round"/><circle cx="8" cy="8" r="1" fill="var(--accent2)"/></svg>
-            </div>
-          </div>
-          <div class="resume-card-role">UX + AI Product Designer</div>
-          <div class="resume-card-best">Best for: AI product roles, LLM companies, AI-forward startups</div>
-          <div class="resume-card-focus">Focus: AI-augmented UX workflows, LLM interfaces, conversational UI, AI onboarding flows.</div>
-          <a href="resumes/Kendall_Clark_UX_AI_Product_Designer_Resume.docx"
-             class="btn btn-primary"
-             download
-             style="background:var(--accent2);"
-             aria-label="Download UX plus AI Product Designer resume">
-            Download Resume
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+  <!-- SECONDARY RESUMES -->
+  <section class="section section-bg2" aria-label="Tailored resume options">
+    <div class="section-inner">
+      <span class="section-label reveal">On Request</span>
+      <h2 class="display-sm reveal reveal-delay-1" style="margin-bottom:32px;">Tailored for a specific opening.</h2>
+
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:1px solid var(--border);" class="resume-secondary-grid">
+        <div style="background:var(--surface); padding:28px 24px;" class="reveal">
+          <div class="resume-card-role" style="font-size:17px; margin-bottom:8px;">Front-End Developer</div>
+          <div class="resume-card-focus" style="margin-bottom:18px;">Angular, TypeScript, SCSS, React, accessible component development.</div>
+          <a href="resumes/Kendall_Clark_FrontEnd_Developer_Resume.docx" class="btn btn-ghost" download aria-label="Download Front-End Developer resume">Download →</a>
         </div>
-
-        <!-- 03 Front-End Dev -->
-        <div class="resume-card reveal reveal-delay-2" role="article" aria-label="Front-End Developer resume">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-            <div class="mono" style="color:var(--accent3);">03</div>
-            <div style="width:40px; height:40px; background:rgba(0,212,255,0.1); border-radius:var(--radius); display:flex; align-items:center; justify-content:center;" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5 5L2 8l3 3M11 5l3 3-3 3M9 4l-2 8" stroke="var(--accent3)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-          </div>
-          <div class="resume-card-role">Front-End Developer (UX-focused)</div>
-          <div class="resume-card-best">Best for: Front-end engineer roles at design-forward companies</div>
-          <div class="resume-card-focus">Focus: Angular, TypeScript, SCSS, React, design system implementation, accessible component development.</div>
-          <a href="resumes/Kendall_Clark_FrontEnd_Developer_Resume.docx"
-             class="btn btn-primary"
-             download
-             style="background:var(--accent3); color:var(--bg);"
-             aria-label="Download Front-End Developer resume">
-            Download Resume
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+        <div style="background:var(--surface); padding:28px 24px;" class="reveal reveal-delay-1">
+          <div class="resume-card-role" style="font-size:17px; margin-bottom:8px;">UI Designer</div>
+          <div class="resume-card-focus" style="margin-bottom:18px;">Visual craft, component libraries, design tokens, brand systems.</div>
+          <a href="resumes/Kendall_Clark_UI_Designer_Resume.docx" class="btn btn-ghost" download aria-label="Download UI Designer resume">Download →</a>
         </div>
-
-        <!-- 04 UI Designer -->
-        <div class="resume-card reveal reveal-delay-3" role="article" aria-label="UI Designer resume">
-          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-            <div class="mono" style="color:var(--gold);">04</div>
-            <div style="width:40px; height:40px; background:rgba(255,184,48,0.1); border-radius:var(--radius); display:flex; align-items:center; justify-content:center;" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="var(--gold)" stroke-width="1.2"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="var(--gold)" stroke-width="1.2"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="var(--gold)" stroke-width="1.2"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="var(--gold)" stroke-width="1.2"/></svg>
-            </div>
-          </div>
-          <div class="resume-card-role">UI Designer</div>
-          <div class="resume-card-best">Best for: Visual design, brand, and UI-focused roles</div>
-          <div class="resume-card-focus">Focus: Visual craft, component libraries, design tokens, brand systems, motion design.</div>
-          <a href="resumes/Kendall_Clark_UI_Designer_Resume.docx"
-             class="btn btn-primary"
-             download
-             style="background:var(--gold); color:var(--bg);"
-             aria-label="Download UI Designer resume">
-            Download Resume
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+        <div style="background:var(--surface); padding:28px 24px;" class="reveal reveal-delay-2">
+          <div class="resume-card-role" style="font-size:17px; margin-bottom:8px;">UX Researcher</div>
+          <div class="resume-card-focus" style="margin-bottom:18px;">Usability testing, journey mapping, synthesis, research reporting.</div>
+          <a href="resumes/Kendall_Clark_UX_Researcher_Resume.docx" class="btn btn-ghost" download aria-label="Download UX Researcher resume">Download →</a>
         </div>
-
-        <!-- 05 UX Researcher, full width -->
-        <div class="resume-card reveal" style="grid-column:span 2;" role="article" aria-label="UX Researcher resume">
-          <div style="display:grid; grid-template-columns:1fr auto; gap:32px; align-items:start;">
-            <div>
-              <div class="mono" style="color:var(--red); margin-bottom:16px;">05</div>
-              <div class="resume-card-role">UX Researcher</div>
-              <div class="resume-card-best">Best for: Research ops, research-heavy teams, mixed-methods roles</div>
-              <div class="resume-card-focus" style="max-width:640px;">Focus: Usability testing, Jobs-to-Be-Done, journey mapping, synthesis, research reporting, and actionable insights delivery.</div>
-            </div>
-            <a href="resumes/Kendall_Clark_UX_Researcher_Resume.docx"
-               class="btn btn-primary"
-               download
-               style="background:var(--red); white-space:nowrap; align-self:flex-end;"
-               aria-label="Download UX Researcher resume">
-              Download Resume
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </div>
-
       </div>
 
       <!-- Recruiter note -->
-      <div style="margin-top:40px; padding:28px 32px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); display:flex; align-items:center; gap:20px; flex-wrap:wrap;" class="reveal">
-        <div style="width:36px; height:36px; background:rgba(200,241,53,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;" aria-hidden="true">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="var(--accent)" stroke-width="1.2"/><path d="M8 7v4M8 5.5v.5" stroke="var(--accent)" stroke-width="1.2" stroke-linecap="round"/></svg>
-        </div>
+      <div style="margin-top:32px; padding:26px 30px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); display:flex; align-items:center; gap:18px; flex-wrap:wrap;" class="reveal">
         <div style="flex:1;">
-          <div style="font-weight:500; color:var(--text); margin-bottom:4px;">Not sure which one fits?</div>
-          <div style="font-size:14px; color:var(--text2);">Email me and I'll send the right one. <a href="mailto:kendallclarkdesign@gmail.com" style="color:var(--accent);">kendallclarkdesign@gmail.com</a></div>
+          <div style="font-weight:500; color:var(--ink); margin-bottom:4px;">Not sure which one fits?</div>
+          <div style="font-size:14px; color:var(--ink2);">Email me and I'll send the right one. <a href="mailto:kendallclarkdesign@gmail.com" style="color:var(--accent);">kendallclarkdesign@gmail.com</a></div>
         </div>
       </div>
     </div>
@@ -180,7 +115,7 @@
 
   <footer class="footer" role="contentinfo">
     <div class="footer-inner">
-      <span class="footer-copy">© 2025 Kendall Clark, UX/UI Designer, New York</span>
+      <span class="footer-copy">© 2026 Kendall Clark, UX/UI Designer, New York</span>
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="work.html" class="footer-link">Work</a>
         <a href="about.html" class="footer-link">About</a>
@@ -196,12 +131,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <style>
-    @media (max-width: 768px) {
-      .resume-grid { grid-template-columns: 1fr !important; }
-      .resume-card[style*="grid-column:span 2"] { grid-column: span 1 !important; }
-      .resume-card[style*="grid-column:span 2"] > div { grid-template-columns: 1fr !important; }
-    }
-  </style>
 </body>
 </html>

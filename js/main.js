@@ -1,57 +1,13 @@
 /* ============================================================
    KENDALL CLARK — PORTFOLIO
-   main.js — Shared JS: Cursor, Scroll Reveal, Nav, Ticker
+   main.js — Shared JS: Nav, Scroll Reveal, Filter
    ============================================================ */
 
 (function () {
   'use strict';
 
   /* ----------------------------------------------------------
-     1. CUSTOM CURSOR
-     ---------------------------------------------------------- */
-  const dot  = document.querySelector('.cursor-dot');
-  const ring = document.querySelector('.cursor-ring');
-
-  let mouseX = -100, mouseY = -100;
-  let ringX  = -100, ringY  = -100;
-  let rafId;
-
-  function updateCursor() {
-    if (dot)  { dot.style.left  = mouseX + 'px'; dot.style.top  = mouseY + 'px'; }
-
-    ringX += (mouseX - ringX) * 0.12;
-    ringY += (mouseY - ringY) * 0.12;
-    if (ring) { ring.style.left = ringX + 'px'; ring.style.top  = ringY + 'px'; }
-
-    rafId = requestAnimationFrame(updateCursor);
-  }
-
-  document.addEventListener('mousemove', function (e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
-
-  document.addEventListener('mouseleave', function () {
-    if (dot)  dot.style.opacity  = '0';
-    if (ring) ring.style.opacity = '0';
-  });
-
-  document.addEventListener('mouseenter', function () {
-    if (dot)  dot.style.opacity  = '1';
-    if (ring) ring.style.opacity = '1';
-  });
-
-  const hoverTargets = 'a, button, .btn, .tag, .project-card, .resume-card, .service-card, .nav-link, .nav-cta, input, textarea, select';
-
-  document.querySelectorAll(hoverTargets).forEach(function (el) {
-    el.addEventListener('mouseenter', function () { if (ring) ring.classList.add('hovered'); });
-    el.addEventListener('mouseleave', function () { if (ring) ring.classList.remove('hovered'); });
-  });
-
-  if (dot || ring) rafId = requestAnimationFrame(updateCursor);
-
-  /* ----------------------------------------------------------
-     2. MOBILE NAV
+     1. MOBILE NAV
      ---------------------------------------------------------- */
   const hamburger = document.querySelector('.nav-hamburger');
   const overlay   = document.querySelector('.nav-overlay');
@@ -76,7 +32,7 @@
   }
 
   /* ----------------------------------------------------------
-     3. ACTIVE NAV LINK
+     2. ACTIVE NAV LINK
      ---------------------------------------------------------- */
   (function () {
     const path = window.location.pathname.split('/').pop() || 'index.html';
@@ -89,7 +45,7 @@
   })();
 
   /* ----------------------------------------------------------
-     4. SCROLL REVEAL (IntersectionObserver)
+     3. SCROLL REVEAL (IntersectionObserver)
      ---------------------------------------------------------- */
   (function () {
     const revealEls = document.querySelectorAll('.reveal');
@@ -114,7 +70,7 @@
   })();
 
   /* ----------------------------------------------------------
-     5. PROJECT FILTER (work.html)
+     4. PROJECT FILTER (work.html)
      ---------------------------------------------------------- */
   (function () {
     const filters = document.querySelectorAll('[data-filter]');
@@ -125,8 +81,9 @@
       btn.addEventListener('click', function () {
         const cat = btn.getAttribute('data-filter');
 
-        filters.forEach(function (f) { f.classList.remove('active'); });
+        filters.forEach(function (f) { f.classList.remove('active'); f.setAttribute('aria-pressed', 'false'); });
         btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
 
         cards.forEach(function (card) {
           if (cat === 'all') {
@@ -138,27 +95,6 @@
         });
       });
     });
-  })();
-
-  /* ----------------------------------------------------------
-     6. TICKER DUPLICATE (seamless loop)
-     ---------------------------------------------------------- */
-  (function () {
-    const track = document.querySelector('.ticker-track');
-    if (!track) return;
-    const clone = track.innerHTML;
-    track.innerHTML = clone + clone;
-  })();
-
-  /* ----------------------------------------------------------
-     7. REDUCED MOTION: pause animations
-     ---------------------------------------------------------- */
-  (function () {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.documentElement.style.setProperty('--ticker-duration', '0s');
-      const track = document.querySelector('.ticker-track');
-      if (track) track.style.animationPlayState = 'paused';
-    }
   })();
 
 })();
