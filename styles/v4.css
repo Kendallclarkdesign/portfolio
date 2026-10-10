@@ -465,3 +465,16 @@ body { font-size: 16px; line-height: 1.6; }
 @media (max-width: 600px) { .skills4 { grid-template-columns: 1fr; } }
 
 .timeline-note { font-size: 15px; line-height: 1.55; color: var(--ink2); margin-top: 8px; max-width: 62ch; }
+
+
+/* Repository links */
+.repo-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 14px; font-weight: 500; color: var(--ink); }
+.repo-link svg { flex: none; }
+.repo-link:hover { color: var(--accent-text); text-decoration: underline; text-underline-offset: 4px; }
+.work4-item { display: flex; flex-direction: column; }
+.work4-item .repo-link { padding: 6px 2px 0; }
+.ai4-item { display: flex; flex-direction: column; align-items: flex-start; }
+.ai4-grid > .ai4-item { display: flex; }
+.ai4-item > a:first-child { display: block; }
+.ai4-item .repo-link { margin-top: 10px; }
+.btn.repo-link { display: inline-flex; padding: 12px 22px; }
