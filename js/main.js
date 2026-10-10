@@ -175,6 +175,7 @@
     ['case-study-hausofalt.html', 'Haus of Alt, Brand and Shopify Store'],
     ['case-study-ninas.html', "Nina's Cleaning Service, Brand, Web & Local SEO"],
     ['case-study-clearbot.html', 'ClearBot, Shopify Storefront'],
+    ['case-study-nufix.html', 'Nu-Fix, Contractor Website'],
     ['case-study-winsor.html', 'Winsor Pilates, Membership Site'],
     ['case-study-swiftfinance.html', 'SwiftFinance, Mobile Banking Concept'],
     ['case-study-forge.html', 'FORGE Fitness, Web Concept']
