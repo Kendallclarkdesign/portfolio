@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Pipeline, Case Study | Kendall Clark</title>
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:image" content="https://kendallclark.design/images/cv-video.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="A multi-agent pipeline that turns a topic into a YouTube video with Remotion motion graphics and no generation credits." />
+  <meta name="keywords" content="American Express UX Case Study, Fraud Investigation Platform, Enterprise UX Design, Fintech UX, Kendall Clark AmEx, GAITS FCP redesign" />
+  <link rel="canonical" href="https://kendallclark.design/case-study-video-pipeline" />
+  <meta property="og:title" content="Video Pipeline, Case Study | Kendall Clark" />
+  <meta property="og:description" content="A multi-agent pipeline that turns a topic into a YouTube video with Remotion motion graphics and no generation credits." />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="styles/global.css?v=4" />
+  <link rel="stylesheet" href="styles/v4.css?v=14" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav4" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav4-logo" aria-label="Kendall Clark, Home">Kendall Clark</a>
+    <div class="nav4-links">
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+    </div>
+    <a href="contact.html" class="pill" aria-label="Get in touch">Get in touch <span class="pill-ico"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4.5M11 3v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+  </div>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="cs-hero" aria-label="Case study hero">
+    <div class="cs-hero-inner">
+      <a href="work.html" class="cs-back">&larr; All Work</a>
+      <span class="section-label reveal">Case Study 13 &middot; AI pipeline, live</span>
+      <h1 class="reveal reveal-delay-1">A video pipeline made in code, with no generation credits.</h1>
+      <p class="text-xl reveal reveal-delay-2" style="color:var(--ink2); max-width:640px; margin-top:20px;">A multi-agent pipeline that takes a topic to a finished, SEO-packaged YouTube video using motion graphics rendered in Remotion.</p>
+    </div>
+  </section>
+
+  <section class="cs-body" aria-label="Case study content">
+    <div class="cs-body-inner">
+      <div class="cs-meta-grid reveal"><div class="cs-meta-item"><div class="cs-meta-label">Type</div><div class="cs-meta-value">Pipeline design and build</div></div><div class="cs-meta-item"><div class="cs-meta-label">Role</div><div class="cs-meta-value">Design, development, motion</div></div><div class="cs-meta-item"><div class="cs-meta-label">Stack</div><div class="cs-meta-value">Node, Remotion, TTS, YouTube API</div></div><div class="cs-meta-item"><div class="cs-meta-label">Channel</div><div class="cs-meta-value">HealthyLivingHacks</div></div></div>
+      <figure class="reveal" style="margin:0 0 56px;"><img src="images/ai-video.png" alt="Diagram of the six pipeline steps from research to private upload" style="width:100%;" loading="lazy" /></figure>
+      <div class="cs-section reveal">
+        <h2>The problem</h2>
+        <p>I run a faceless health channel and did not want to hand-build every video, or pay per clip for AI footage. The goal was a repeatable process that costs nothing to render and keeps a consistent look.</p>
+      </div>
+<div class="cs-section reveal">
+        <h2>The pipeline</h2>
+        <ul><li><strong>Research and script.</strong> Agents research the topic and shape a script into beats.</li><li><strong>Hooks.</strong> A separate agent writes the opening and closing lines, so the first seconds get dedicated attention.</li><li><strong>Voiceover first.</strong> The narration is generated and its real timing measured before the shot list exists, so cuts land on actual speech.</li><li><strong>Shot list and render.</strong> A fixed structure of a five-shot hook, content beats, a retention moment, and an outro, rendered as procedural motion graphics in Remotion.</li><li><strong>Package and upload.</strong> A thumbnail from Canva, a written SEO package, and a script that uploads through the YouTube API.</li></ul>
+      </div>
+<div class="cs-section reveal">
+        <h2>Decisions that mattered</h2>
+        <ul><li><strong>Dropped paid AI footage.</strong> When credits ran out I replaced the generation step with Remotion scenes. Cost went to zero and the look became consistent.</li><li><strong>One shared engine.</strong> Theme and scene components live in one place, so restyling every video is one edit.</li><li><strong>Logo is never generated.</strong> Image models garble text, so the brand mark is placed as a real image.</li><li><strong>Uploads default to private.</strong> The script never publishes publicly. I review and flip visibility myself.</li><li><strong>Honest disclosure.</strong> I answer YouTube's synthetic-content question based on what each video contains.</li></ul>
+      </div>
+<div class="cs-section reveal">
+        <h2>Lessons</h2>
+        <p>Measuring audio before cutting changed the edit more than any visual tweak. I also found the voiceover tool needed an explicit speed flag and ffmpeg on the path, and recorded both so the next run does not fail the same way.</p>
+      </div>
+<div class="cs-section reveal">
+        <h2>Outcome</h2>
+        <p>The first video is published. I have not collected audience numbers worth quoting yet, so none are claimed.</p>
+      </div>
+
+      
+    </div>
+  </section>
+
+  
+  </main>
+
+  <footer class="foot4" role="contentinfo">
+    <div class="foot4-top">
+      <div>
+        <small>Looking for a designer who ships?</small>
+        <h2>Let's design something that holds up.</h2>
+      </div>
+      <div class="foot4-cols">
+        <div><span>Contact</span><a href="mailto:kendallclarkdesign@gmail.com">kendallclarkdesign@gmail.com</a><a href="contact.html">Contact form</a></div>
+        <div><span>Menu</span><a href="work.html" class="footer-link">Work</a><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Services</a><a href="resume.html" class="footer-link">Resume</a></div>
+        <div><span>Follow</span><a href="https://www.linkedin.com/in/kendallclarkdev/" target="_blank" rel="noopener noreferrer" aria-label="Kendall Clark on LinkedIn (opens in new tab)">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="foot4-mark" aria-hidden="true">Kendall Clark</div>
+    <div class="foot4-legal"><span>&copy; 2026 Kendall Clark, UX/UI Designer, Los Angeles and New York</span><a href="privacy.html" class="footer-link">Privacy and terms</a></div>
+  </footer>
+
+  <script src="js/main.js?v=7"></script>
+  <script src="js/v4.js?v=1"></script>
+</body>
+</html>

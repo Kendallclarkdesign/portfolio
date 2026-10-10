@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Agent Teams, Case Study | Kendall Clark</title>
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:image" content="https://kendallclark.design/images/cv-agents.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Thirteen custom agents in three teams, designed with narrow roles and tool permissions so each step checks the last." />
+  <meta name="keywords" content="American Express UX Case Study, Fraud Investigation Platform, Enterprise UX Design, Fintech UX, Kendall Clark AmEx, GAITS FCP redesign" />
+  <link rel="canonical" href="https://kendallclark.design/case-study-agent-teams" />
+  <meta property="og:title" content="AI Agent Teams, Case Study | Kendall Clark" />
+  <meta property="og:description" content="Thirteen custom agents in three teams, designed with narrow roles and tool permissions so each step checks the last." />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="styles/global.css?v=4" />
+  <link rel="stylesheet" href="styles/v4.css?v=14" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav4" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav4-logo" aria-label="Kendall Clark, Home">Kendall Clark</a>
+    <div class="nav4-links">
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+    </div>
+    <a href="contact.html" class="pill" aria-label="Get in touch">Get in touch <span class="pill-ico"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4.5M11 3v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+  </div>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="cs-hero" aria-label="Case study hero">
+    <div class="cs-hero-inner">
+      <a href="work.html" class="cs-back">&larr; All Work</a>
+      <span class="section-label reveal">Case Study 12 &middot; AI systems, tested</span>
+      <h1 class="reveal reveal-delay-1">Three AI agent teams that check each other.</h1>
+      <p class="text-xl reveal reveal-delay-2" style="color:var(--ink2); max-width:640px; margin-top:20px;">Thirteen custom agents in three teams for lead generation, marketing content, and client reports, built so no single agent can invent a fact and pass it on.</p>
+    </div>
+  </section>
+
+  <section class="cs-body" aria-label="Case study content">
+    <div class="cs-body-inner">
+      <div class="cs-meta-grid reveal"><div class="cs-meta-item"><div class="cs-meta-label">Type</div><div class="cs-meta-value">Multi-agent system design</div></div><div class="cs-meta-item"><div class="cs-meta-label">Role</div><div class="cs-meta-value">Design and build</div></div><div class="cs-meta-item"><div class="cs-meta-label">Agents</div><div class="cs-meta-value">13 in 3 teams</div></div><div class="cs-meta-item"><div class="cs-meta-label">Tools</div><div class="cs-meta-value">Claude, MCP, web and file access</div></div></div>
+      <figure class="reveal" style="margin:0 0 56px;"><img src="images/ai-agents.png" alt="Diagram of a project manager agent delegating to researcher, verifier, writer, and data manager agents" style="width:100%;" loading="lazy" /></figure>
+      <div class="cs-section reveal">
+        <h2>The problem</h2>
+        <p>One AI doing everything produces confident mistakes. In lead generation that means emailing a business that already has a website. In client reports it means a made-up number. I needed work split so each step can catch the one before it.</p>
+      </div>
+<div class="cs-section reveal">
+        <h2>The three teams</h2>
+        <ul><li><strong>Lead generation:</strong> a project manager plus a researcher, verifier, outreach writer, and data manager.</li><li><strong>Marketing content:</strong> a director plus a graphic designer, video producer, copywriter, and brand strategist, wired to Canva, Figma, and video tools.</li><li><strong>Client reports:</strong> a manager plus a data analyst and a writer.</li></ul>
+      </div>
+<div class="cs-section reveal">
+        <h2>Design rules</h2>
+        <ul><li><strong>Managers delegate and never do the work.</strong> That keeps judgment and production separate.</li><li><strong>Permissions shape behavior.</strong> The writer has no research access, so it can only use facts the verifier confirmed. Only the data manager can write to the lead database, and it checks for duplicates first.</li><li><strong>Finding is not concluding.</strong> The researcher surfaces candidates and is told never to decide a business has no website. That call belongs to the verifier.</li><li><strong>One shared reference file per team</strong> holds facts, voice rules, and the data schema, so a fix happens in one place.</li><li><strong>Every number needs a source.</strong> In reports, figures come from git history, analytics, form counts, or a live check. If a source is missing, the agent says so instead of guessing.</li></ul>
+      </div>
+<div class="cs-section reveal">
+        <h2>What testing showed</h2>
+        <p>I ran the lead-gen team on two towns. The first run wrote 6 verified leads and caught a hijacked domain and a false "no website" that actually had a booking site. The second wrote 9 verified leads, and I confirmed them directly in the database rather than trusting the agents' summary. The verifier also rejected 4 restaurants that a scraper field had flagged as having no online ordering, by checking each site, and filtered out junk emails.</p><p>The marketing and report teams are built and documented but have not yet had a full live run as a team, so I am not claiming results for them.</p>
+      </div>
+<div class="cs-section reveal">
+        <h2>Outcome</h2>
+        <p>The lead-gen team runs on demand alongside an automated weekday routine and writes to the same queue. The pattern, narrow roles, enforced by tool access, with a verifier in the middle, is the part I would carry to any AI product.</p>
+      </div>
+
+      
+    </div>
+  </section>
+
+  
+  </main>
+
+  <footer class="foot4" role="contentinfo">
+    <div class="foot4-top">
+      <div>
+        <small>Looking for a designer who ships?</small>
+        <h2>Let's design something that holds up.</h2>
+      </div>
+      <div class="foot4-cols">
+        <div><span>Contact</span><a href="mailto:kendallclarkdesign@gmail.com">kendallclarkdesign@gmail.com</a><a href="contact.html">Contact form</a></div>
+        <div><span>Menu</span><a href="work.html" class="footer-link">Work</a><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Services</a><a href="resume.html" class="footer-link">Resume</a></div>
+        <div><span>Follow</span><a href="https://www.linkedin.com/in/kendallclarkdev/" target="_blank" rel="noopener noreferrer" aria-label="Kendall Clark on LinkedIn (opens in new tab)">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="foot4-mark" aria-hidden="true">Kendall Clark</div>
+    <div class="foot4-legal"><span>&copy; 2026 Kendall Clark, UX/UI Designer, Los Angeles and New York</span><a href="privacy.html" class="footer-link">Privacy and terms</a></div>
+  </footer>
+
+  <script src="js/main.js?v=7"></script>
+  <script src="js/v4.js?v=1"></script>
+</body>
+</html>

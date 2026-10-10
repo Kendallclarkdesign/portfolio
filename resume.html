@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume, Kendall Clark UX/UI Designer | Download CV</title>
+  <meta name="theme-color" content="#0B1220" />
   <meta name="description" content="Download Kendall Clark's resume. Senior UX/UI Designer resume, with tailored versions available on request for Front-End Developer, UI Designer, and UX Researcher roles." />
   <meta name="keywords" content="Kendall Clark Resume, UX Designer Resume Download, Front-End Developer Resume NYC" />
   <link rel="canonical" href="https://kendallclark.design/resume" />
   <meta property="og:title" content="Resume, Kendall Clark UX/UI Designer | Download CV" />
   <meta property="og:description" content="Senior UX/UI Designer resume, with tailored versions available on request." />
   <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/global.css?v=4" />
+  <link rel="stylesheet" href="styles/v4.css?v=14" />
   <style>
     @media (max-width: 768px) {
       .resume-secondary-grid { grid-template-columns: 1fr !important; }
@@ -18,21 +20,20 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Kendall Clark, Home">Kendall<span>.</span>Clark</a>
-      <div class="nav-links" role="list">
-        <a href="work.html" class="nav-link" role="listitem">Work</a>
-        <a href="about.html" class="nav-link" role="listitem">About</a>
-        <a href="services.html" class="nav-link" role="listitem">Services</a>
-        <a href="resume.html" class="nav-link active" role="listitem" aria-current="page">Resume</a>
-        <a href="contact.html" class="nav-cta" aria-label="Hire Kendall Clark">Hire Me</a>
-      </div>
-      <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
-        <span></span><span></span><span></span>
-      </button>
+  <nav class="nav4" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav4-logo" aria-label="Kendall Clark, Home">Kendall Clark</a>
+    <div class="nav4-links">
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="resume.html" class="nav-link">Resume</a>
     </div>
+    <a href="contact.html" class="pill" aria-label="Get in touch">Get in touch <span class="pill-ico"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4.5M11 3v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <div class="nav-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
@@ -42,6 +43,8 @@
     <a href="resume.html" class="nav-link">Resume</a>
     <a href="contact.html" class="nav-cta">Hire Me</a>
   </div>
+
+  <main id="main">
 
   <!-- HERO -->
   <section style="position:relative; padding-top:calc(var(--nav-h) + 72px); padding-bottom:64px; padding-left:clamp(24px,5vw,64px); padding-right:clamp(24px,5vw,64px);" aria-label="Resume page hero">
@@ -62,7 +65,7 @@
       <div class="resume-card primary reveal" role="article" aria-label="Senior UX/UI Designer resume" style="padding:48px 44px;">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px;">
           <div>
-            <div class="mono" style="color:var(--accent); margin-bottom:10px;">Primary Resume</div>
+            <div class="mono" style="color:var(--accent-text); margin-bottom:10px;">Primary Resume</div>
             <div class="resume-card-role" style="font-size:26px;">Senior UX/UI Designer</div>
             <div class="resume-card-focus" style="margin-top:10px; max-width:520px;">End-to-end UX, design systems, fintech depth, stakeholder collaboration. Best for Senior IC, Lead Designer, and Product Designer roles.</div>
           </div>
@@ -84,6 +87,11 @@
     <div class="section-inner">
       <span class="section-label reveal">On Request</span>
       <h2 class="display-sm reveal reveal-delay-1" style="margin-bottom:32px;">Tailored for a specific opening.</h2>
+
+      <div style="margin-bottom:24px; padding:28px 30px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:18px;" class="reveal">
+        <div style="max-width:560px;"><div class="resume-card-role" style="font-size:19px; margin-bottom:6px;">UX / AI Product Designer</div><div class="resume-card-focus">Designing AI-assisted workflows, agent tooling, and research-led product features. Best for AI product and platform teams.</div></div>
+        <a href="resumes/Kendall_Clark_UX_AI_Product_Designer_Resume.docx" class="btn btn-ghost" download aria-label="Download UX AI Product Designer resume">Download →</a>
+      </div>
 
       <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:1px solid var(--border);" class="resume-secondary-grid">
         <div style="background:var(--surface); padding:28px 24px;" class="reveal">
@@ -107,29 +115,30 @@
       <div style="margin-top:32px; padding:26px 30px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); display:flex; align-items:center; gap:18px; flex-wrap:wrap;" class="reveal">
         <div style="flex:1;">
           <div style="font-weight:500; color:var(--ink); margin-bottom:4px;">Not sure which one fits?</div>
-          <div style="font-size:14px; color:var(--ink2);">Email me and I'll send the right one. <a href="mailto:kendallclarkdesign@gmail.com" style="color:var(--accent);">kendallclarkdesign@gmail.com</a></div>
+          <div style="font-size:14px; color:var(--ink2);">Email me and I'll send the right one. <a href="mailto:kendallclarkdesign@gmail.com" style="color:var(--accent-text);">kendallclarkdesign@gmail.com</a></div>
         </div>
       </div>
     </div>
   </section>
+  </main>
 
-  <footer class="footer" role="contentinfo">
-    <div class="footer-inner">
-      <span class="footer-copy">© 2026 Kendall Clark, UX/UI Designer, New York</span>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="work.html" class="footer-link">Work</a>
-        <a href="about.html" class="footer-link">About</a>
-        <a href="services.html" class="footer-link">Services</a>
-        <a href="resume.html" class="footer-link">Resume</a>
-        <a href="contact.html" class="footer-link">Contact</a>
-      </nav>
-      <div class="footer-status">
-        <div class="status-dot" aria-hidden="true"></div>
-        <span class="status-text">Available for opportunities</span>
+  <footer class="foot4" role="contentinfo">
+    <div class="foot4-top">
+      <div>
+        <small>Looking for a designer who ships?</small>
+        <h2>Let's design something that holds up.</h2>
+      </div>
+      <div class="foot4-cols">
+        <div><span>Contact</span><a href="mailto:kendallclarkdesign@gmail.com">kendallclarkdesign@gmail.com</a><a href="contact.html">Contact form</a></div>
+        <div><span>Menu</span><a href="work.html" class="footer-link">Work</a><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Services</a><a href="resume.html" class="footer-link">Resume</a></div>
+        <div><span>Follow</span><a href="https://www.linkedin.com/in/kendallclarkdev/" target="_blank" rel="noopener noreferrer" aria-label="Kendall Clark on LinkedIn (opens in new tab)">LinkedIn</a></div>
       </div>
     </div>
+    <div class="foot4-mark" aria-hidden="true">Kendall Clark</div>
+    <div class="foot4-legal"><span>&copy; 2026 Kendall Clark, UX/UI Designer, Los Angeles and New York</span><a href="privacy.html" class="footer-link">Privacy and terms</a></div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=7"></script>
+  <script src="js/v4.js?v=1"></script>
 </body>
 </html>

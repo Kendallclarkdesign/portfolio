@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max Noir Website, Case Study | Kendall Clark UX/UI Designer</title>
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:image" content="https://kendallclark.design/images/cv-maxnoir.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Case study: a creator website for UGC creator and music curator Max Noir. Four concepts tested with the client, a spec-first workflow, and a config-driven static build." />
+  <meta name="keywords" content="American Express UX Case Study, Fraud Investigation Platform, Enterprise UX Design, Fintech UX, Kendall Clark AmEx, GAITS FCP redesign" />
+  <link rel="canonical" href="https://kendallclark.design/case-study-maxnoir" />
+  <meta property="og:title" content="Max Noir Website, Case Study" />
+  <meta property="og:description" content="Creator website designed with the client, from four concepts to a live build." />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="styles/global.css?v=4" />
+  <link rel="stylesheet" href="styles/v4.css?v=14" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav4" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav4-logo" aria-label="Kendall Clark, Home">Kendall Clark</a>
+    <div class="nav4-links">
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+    </div>
+    <a href="contact.html" class="pill" aria-label="Get in touch">Get in touch <span class="pill-ico"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4.5M11 3v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+  </div>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="cs-hero" aria-label="Case study hero">
+    <div class="cs-hero-inner">
+      <a href="work.html" class="cs-back">&larr; All Work</a>
+      <span class="section-label reveal">Case Study 07 &middot; Live Client Site</span>
+      <h1 class="display-lg reveal reveal-delay-1">Max Noir, a creator site built for brand deals.</h1>
+      <p class="text-xl reveal reveal-delay-2" style="color:var(--ink2); max-width:640px; margin-top:20px;">A UGC creator and music curator needed one link that closes brand deals. I designed it with the client across four concepts, then built and shipped it.</p>
+    </div>
+  </section>
+
+  <section class="cs-body" aria-label="Case study content">
+    <div class="cs-body-inner">
+      <div class="cs-meta-grid reveal">
+        <div class="cs-meta-item"><div class="cs-meta-label">Client</div><div class="cs-meta-value">Max Noir</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Role</div><div class="cs-meta-value">Design, build, content</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Stack</div><div class="cs-meta-value">HTML, CSS, JS, Netlify</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Status</div><div class="cs-meta-value">Live</div></div>
+      </div>
+
+      <figure class="reveal" style="margin:0 0 56px; display:grid; grid-template-columns:1fr 1fr; gap:2px;">
+        <img src="images/maxnoir-hero.webp" alt="Max Noir hero portrait used on the site" style="width:100%; height:100%; object-fit:cover; aspect-ratio:3/4;" loading="lazy" />
+        <img src="images/maxnoir-welcome.webp" alt="Borderless Beats welcome video poster" style="width:100%; height:100%; object-fit:cover; aspect-ratio:3/4;" loading="lazy" />
+      </figure>
+
+      <div class="cs-section reveal">
+        <h2>The problem</h2>
+        <p>Max applies for UGC gigs and pitches brands, but the proof was scattered across Instagram, TikTok, and a link-in-bio page. A brand manager had to dig to find relevant work. The site needed to do one job: show the right work in seconds and make it easy to say yes.</p>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Decisions</h2>
+        <ul>
+          <li><strong>Four concepts, one pick.</strong> I mocked up four whole-site directions and let the client choose. The pick was "Pop Shop": heavy type, hard-offset shadows, and colors pulled from the hero photo.</li>
+          <li><strong>A dedicated UGC page.</strong> It is the link sent with gig applications, so it opens on proof: phone-frame clips and a brands carousel with real logos, not a generic bio.</li>
+          <li><strong>Real content only.</strong> 42 portfolio tiles came from the @iammaxnoir Instagram, with the client's consent. Brands with no posted work stay labeled Sample instead of faking proof.</li>
+          <li><strong>Spec first.</strong> A MASTER.md (content and behavior) and DESIGN.md (visual) are the source of truth. Any change updates the spec, then the code.</li>
+          <li><strong>Editable without a rebuild.</strong> Links, portfolio items, releases, and filters all live in one config object, so content updates are a one-file edit.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Craft details</h2>
+        <ul>
+          <li>Every button and chip carries an icon, drawn from one inline SVG sprite for consistency and zero extra requests.</li>
+          <li>Pointer-tilt and extruded headline effects are switched off for reduced-motion users.</li>
+          <li>Light and dark themes built on shared color tokens, with the palette checked for contrast.</li>
+          <li>Social feeds: an official TikTok embed, plus a scheduled function that refreshes Instagram posts every six hours.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Outcome</h2>
+        <p>The site is live and in use as the link Max sends with UGC applications. I have not yet captured conversion or reply-rate data, so I am not claiming numbers here. Next up: a shorter contact form (it currently asks for eight required fields) and a custom domain.</p>
+      </div>
+
+      <div class="reveal" style="margin-bottom:56px;">
+        <a href="https://max-noir.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="View Max Noir live site (opens in new tab)">View Live Site <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="foot4" role="contentinfo">
+    <div class="foot4-top">
+      <div>
+        <small>Looking for a designer who ships?</small>
+        <h2>Let's design something that holds up.</h2>
+      </div>
+      <div class="foot4-cols">
+        <div><span>Contact</span><a href="mailto:kendallclarkdesign@gmail.com">kendallclarkdesign@gmail.com</a><a href="contact.html">Contact form</a></div>
+        <div><span>Menu</span><a href="work.html" class="footer-link">Work</a><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Services</a><a href="resume.html" class="footer-link">Resume</a></div>
+        <div><span>Follow</span><a href="https://www.linkedin.com/in/kendallclarkdev/" target="_blank" rel="noopener noreferrer" aria-label="Kendall Clark on LinkedIn (opens in new tab)">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="foot4-mark" aria-hidden="true">Kendall Clark</div>
+    <div class="foot4-legal"><span>&copy; 2026 Kendall Clark, UX/UI Designer, Los Angeles and New York</span><a href="privacy.html" class="footer-link">Privacy and terms</a></div>
+  </footer>
+
+  <script src="js/main.js?v=7"></script>
+  <script src="js/v4.js?v=1"></script>
+</body>
+</html>

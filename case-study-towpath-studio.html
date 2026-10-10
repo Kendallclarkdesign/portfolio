@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Towpath Studio, Case Study | Kendall Clark</title>
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:image" content="https://kendallclark.design/images/cv-studio.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="A browser site builder with an AI assistant: Monaco editor, live preview, version history, and a streaming chat on an edge function." />
+  <meta name="keywords" content="American Express UX Case Study, Fraud Investigation Platform, Enterprise UX Design, Fintech UX, Kendall Clark AmEx, GAITS FCP redesign" />
+  <link rel="canonical" href="https://kendallclark.design/case-study-towpath-studio" />
+  <meta property="og:title" content="Towpath Studio, Case Study | Kendall Clark" />
+  <meta property="og:description" content="A browser site builder with an AI assistant: Monaco editor, live preview, version history, and a streaming chat on an edge function." />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="styles/global.css?v=4" />
+  <link rel="stylesheet" href="styles/v4.css?v=14" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav4" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav4-logo" aria-label="Kendall Clark, Home">Kendall Clark</a>
+    <div class="nav4-links">
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+    </div>
+    <a href="contact.html" class="pill" aria-label="Get in touch">Get in touch <span class="pill-ico"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4.5M11 3v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+  </div>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="cs-hero" aria-label="Case study hero">
+    <div class="cs-hero-inner">
+      <a href="work.html" class="cs-back">&larr; All Work</a>
+      <span class="section-label reveal">Case Study 11 &middot; AI tool, live</span>
+      <h1 class="reveal reveal-delay-1">Towpath Studio, a site builder with an AI assistant.</h1>
+      <p class="text-xl reveal reveal-delay-2" style="color:var(--ink2); max-width:640px; margin-top:20px;">A browser editor for building client and prospect sites fast: code, live preview, version history, and a chat that creates and edits files.</p>
+    </div>
+  </section>
+
+  <section class="cs-body" aria-label="Case study content">
+    <div class="cs-body-inner">
+      <div class="cs-meta-grid reveal"><div class="cs-meta-item"><div class="cs-meta-label">Type</div><div class="cs-meta-value">Tool design and build</div></div><div class="cs-meta-item"><div class="cs-meta-label">Role</div><div class="cs-meta-value">Design, front-end, AI integration</div></div><div class="cs-meta-item"><div class="cs-meta-label">Stack</div><div class="cs-meta-value">JS, Monaco, Netlify edge</div></div><div class="cs-meta-item"><div class="cs-meta-label">Status</div><div class="cs-meta-value">Live, private</div></div></div>
+      <figure class="reveal" style="margin:0 0 56px;"><img src="images/ai-studio.png" alt="Towpath Studio editor with file list, code editor, device preview, and AI assistant panel" style="width:100%;" loading="lazy" /></figure>
+      <div class="cs-section reveal">
+        <h2>The problem</h2>
+        <p>Prototyping a prospect's site meant juggling an editor, a browser, and an AI chat in three windows. I wanted one workspace with full code control and an assistant that edits the same files.</p>
+      </div>
+<div class="cs-section reveal">
+        <h2>How it works</h2>
+        <ul><li><strong>Editor and preview.</strong> Monaco editor, a sandboxed iframe preview, and a Desktop, Tablet, Mobile switch.</li><li><strong>Projects and history.</strong> Multiple projects with saved versions, stored in the browser with one file to swap when a database is added.</li><li><strong>AI assistant.</strong> A chat panel with a model picker. The assistant creates and edits files in the open project.</li><li><strong>CRM link.</strong> Opens from a lead in the CRM with the business name prefilled.</li></ul>
+      </div>
+<div class="cs-section reveal">
+        <h2>Decisions that mattered</h2>
+        <ul><li><strong>Streaming needed an edge function.</strong> Standard serverless functions cut long responses at about 30 seconds, so chat runs on an edge function.</li><li><strong>Keys stay on the server.</strong> The browser never sees an API key. A server-side allowlist decides which models can be called, and a passphrase gates the chat.</li><li><strong>Chose models by testing.</strong> I ran the same prompt across free models. Two answered in 16 to 19 seconds, one took 83, and several timed out at 240. That is why the default is a fast free model with a paid option behind it.</li><li><strong>Held scope.</strong> A click-to-edit panel was on the plan. I cut it to ship the core tool first.</li></ul>
+      </div>
+<div class="cs-section reveal">
+        <h2>Limits</h2>
+        <p>It is a private tool, not a product, and I have not tested it with prospects or other users. It was checked through direct API calls and the model comparison. Spend is capped by using free or low-cost models.</p>
+      </div>
+<div class="cs-section reveal">
+        <h2>Outcome</h2>
+        <p>Live since October 2026 at towpath-studio.netlify.app. It is built to turn a lead into a first prototype.</p>
+      </div>
+
+      <div class="reveal" style="margin-bottom:56px;"><a href="https://towpath-studio.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Open Towpath Studio (opens in new tab)">Open Towpath Studio <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a></div>
+    </div>
+  </section>
+
+  
+  </main>
+
+  <footer class="foot4" role="contentinfo">
+    <div class="foot4-top">
+      <div>
+        <small>Looking for a designer who ships?</small>
+        <h2>Let's design something that holds up.</h2>
+      </div>
+      <div class="foot4-cols">
+        <div><span>Contact</span><a href="mailto:kendallclarkdesign@gmail.com">kendallclarkdesign@gmail.com</a><a href="contact.html">Contact form</a></div>
+        <div><span>Menu</span><a href="work.html" class="footer-link">Work</a><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Services</a><a href="resume.html" class="footer-link">Resume</a></div>
+        <div><span>Follow</span><a href="https://www.linkedin.com/in/kendallclarkdev/" target="_blank" rel="noopener noreferrer" aria-label="Kendall Clark on LinkedIn (opens in new tab)">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="foot4-mark" aria-hidden="true">Kendall Clark</div>
+    <div class="foot4-legal"><span>&copy; 2026 Kendall Clark, UX/UI Designer, Los Angeles and New York</span><a href="privacy.html" class="footer-link">Privacy and terms</a></div>
+  </footer>
+
+  <script src="js/main.js?v=7"></script>
+  <script src="js/v4.js?v=1"></script>
+</body>
+</html>

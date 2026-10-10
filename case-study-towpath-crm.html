@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Towpath CRM, Case Study | Kendall Clark</title>
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:image" content="https://kendallclark.design/images/cv-crm.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="A private CRM with AI agents as team members: leads, clients, scheduler, branded reports, and a task queue with human control." />
+  <meta name="keywords" content="American Express UX Case Study, Fraud Investigation Platform, Enterprise UX Design, Fintech UX, Kendall Clark AmEx, GAITS FCP redesign" />
+  <link rel="canonical" href="https://kendallclark.design/case-study-towpath-crm" />
+  <meta property="og:title" content="Towpath CRM, Case Study | Kendall Clark" />
+  <meta property="og:description" content="A private CRM with AI agents as team members: leads, clients, scheduler, branded reports, and a task queue with human control." />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="styles/global.css?v=4" />
+  <link rel="stylesheet" href="styles/v4.css?v=14" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav4" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav4-logo" aria-label="Kendall Clark, Home">Kendall Clark</a>
+    <div class="nav4-links">
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+    </div>
+    <a href="contact.html" class="pill" aria-label="Get in touch">Get in touch <span class="pill-ico"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4.5M11 3v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+  </div>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="cs-hero" aria-label="Case study hero">
+    <div class="cs-hero-inner">
+      <a href="work.html" class="cs-back">&larr; All Work</a>
+      <span class="section-label reveal">Case Study 10 &middot; AI product, live</span>
+      <h1 class="reveal reveal-delay-1">Towpath CRM, where AI agents sit on the team.</h1>
+      <p class="text-xl reveal reveal-delay-2" style="color:var(--ink2); max-width:640px; margin-top:20px;">A working CRM for a small agency, with leads, clients, a calendar, branded reports, and a team tab that treats AI agents like employees.</p>
+    </div>
+  </section>
+
+  <section class="cs-body" aria-label="Case study content">
+    <div class="cs-body-inner">
+      <div class="cs-meta-grid reveal"><div class="cs-meta-item"><div class="cs-meta-label">Type</div><div class="cs-meta-value">Product design and build</div></div><div class="cs-meta-item"><div class="cs-meta-label">Role</div><div class="cs-meta-value">Design, front-end, data</div></div><div class="cs-meta-item"><div class="cs-meta-label">Stack</div><div class="cs-meta-value">JS modules, Supabase, Netlify</div></div><div class="cs-meta-item"><div class="cs-meta-label">Status</div><div class="cs-meta-value">Live, private</div></div></div>
+      <figure class="reveal" style="margin:0 0 56px;"><img src="images/ai-crm.png" alt="Towpath CRM cover showing dashboard, leads, clients, and team" style="width:100%;" loading="lazy" /></figure>
+      <div class="cs-section reveal">
+        <h2>The problem</h2>
+        <p>Leads, client work, time, and reports lived in separate tools and in my head. I also had AI agents doing real jobs with nowhere to see or direct them. I wanted one app on a custom domain where both humans and agents show up.</p>
+      </div>
+<div class="cs-section reveal">
+        <h2>What it does</h2>
+        <ul><li><strong>Leads and clients.</strong> Filters, follow-up cadence, client profiles with items marked resolved, and a tools panel with links to each client's analytics.</li><li><strong>Team tab.</strong> Agents appear as employees with job titles. Each has a chat and a task queue.</li><li><strong>Scheduler.</strong> A self-built meeting picker that shows 9 to 5 slots and greys out overlaps, tied to a lead or client.</li><li><strong>Reports and time clock.</strong> One click builds a branded, self-contained client report that prints to PDF. A per-client clock feeds a time report.</li></ul>
+      </div>
+<div class="cs-section reveal">
+        <h2>Decisions that mattered</h2>
+        <ul><li><strong>Nothing runs unasked.</strong> Agent tasks start in backlog. Only tasks I move to queued are meant to be picked up by an agent session.</li><li><strong>Honest analytics.</strong> The app shows only numbers it can verify and labels the rest "not connected". It never estimates.</li><li><strong>Client data stays out of the bundle.</strong> Seed files with client notes and leads are excluded from the deploy, and I confirmed the live site returns 404 for them.</li><li><strong>Checked the email assumption.</strong> A DNS check showed the domain's mail ran on a free plan that cannot send. So the Email tab says so and supports copy, send elsewhere, then log as sent, instead of faking a send button.</li><li><strong>No build step.</strong> Plain JavaScript modules, with one storage file as the only thing that changes when the database moved in.</li></ul>
+      </div>
+<div class="cs-section reveal">
+        <h2>Security and testing</h2>
+        <p>Data sits in Supabase with row-level security locked to an allowlist of two approved users. I verified an anonymous visitor is locked out by calling the API directly. Testing was 28 click-through checks and two rounds of simulated-database checks. I have not run a formal usability test.</p>
+      </div>
+<div class="cs-section reveal">
+        <h2>Outcome</h2>
+        <p>Live on a custom domain since September 2026 and used for Towpath Creative's day-to-day work. It is private, so there is no public link and no usage numbers to quote.</p>
+      </div>
+
+      
+    </div>
+  </section>
+
+  
+  </main>
+
+  <footer class="foot4" role="contentinfo">
+    <div class="foot4-top">
+      <div>
+        <small>Looking for a designer who ships?</small>
+        <h2>Let's design something that holds up.</h2>
+      </div>
+      <div class="foot4-cols">
+        <div><span>Contact</span><a href="mailto:kendallclarkdesign@gmail.com">kendallclarkdesign@gmail.com</a><a href="contact.html">Contact form</a></div>
+        <div><span>Menu</span><a href="work.html" class="footer-link">Work</a><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Services</a><a href="resume.html" class="footer-link">Resume</a></div>
+        <div><span>Follow</span><a href="https://www.linkedin.com/in/kendallclarkdev/" target="_blank" rel="noopener noreferrer" aria-label="Kendall Clark on LinkedIn (opens in new tab)">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="foot4-mark" aria-hidden="true">Kendall Clark</div>
+    <div class="foot4-legal"><span>&copy; 2026 Kendall Clark, UX/UI Designer, Los Angeles and New York</span><a href="privacy.html" class="footer-link">Privacy and terms</a></div>
+  </footer>
+
+  <script src="js/main.js?v=7"></script>
+  <script src="js/v4.js?v=1"></script>
+</body>
+</html>
