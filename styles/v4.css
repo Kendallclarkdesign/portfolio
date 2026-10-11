@@ -517,3 +517,15 @@ body { font-size: 16px; line-height: 1.6; }
 .kw4 p { font-size: 15px; line-height: 1.7; color: var(--ink2); }
 @media (max-width: 900px) { .kw4 { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .kw4 { grid-template-columns: 1fr; } }
+
+
+/* Zoomable images and lightbox */
+.zoomable { display: block; width: 100%; padding: 0; cursor: zoom-in; position: relative; }
+.zoomable::after { content: 'Click to enlarge'; position: absolute; right: 10px; bottom: 10px; padding: 6px 10px; font-size: 12px; font-weight: 500; color: #fff; background: rgba(11,18,32,.82); border-radius: var(--radius); opacity: 0; transition: opacity .2s; }
+.zoomable:hover::after, .zoomable:focus-visible::after { opacity: 1; }
+@media (hover: none) { .zoomable::after { opacity: 1; } }
+.lb { position: fixed; inset: 0; z-index: 400; display: none; background: rgba(11,18,32,.94); }
+.lb.on { display: block; }
+.lb-scroll { position: absolute; inset: 0; overflow: auto; padding: 56px 16px 24px; text-align: center; cursor: zoom-out; }
+.lb-scroll img { width: min(1280px, 100%); height: auto; display: inline-block; border-radius: var(--radius); background: #fff; }
+.lb-close { position: absolute; top: 10px; right: 14px; z-index: 2; width: 44px; height: 44px; font-size: 32px; line-height: 1; color: #fff; }

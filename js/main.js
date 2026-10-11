@@ -193,3 +193,36 @@
     if (anchor) anchor.insertAdjacentElement('afterend', a);
   }
 })();
+
+
+/* LIGHTBOX: click an image marked .zoomable to view it full size. Esc, click, or the close button dismisses it. */
+(function () {
+  'use strict';
+  var items = document.querySelectorAll('.zoomable');
+  if (!items.length) return;
+  var box = document.createElement('div');
+  box.className = 'lb';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-modal', 'true');
+  box.setAttribute('aria-label', 'Enlarged image');
+  box.innerHTML = '<button type="button" class="lb-close" aria-label="Close enlarged image">&times;</button><div class="lb-scroll"><img alt="" /></div>';
+  document.body.appendChild(box);
+  var img = box.querySelector('img'), last = null;
+  function open(el) {
+    last = el;
+    var thumb = el.querySelector('img');
+    img.src = el.getAttribute('data-full') || thumb.src;
+    img.alt = thumb ? thumb.alt : '';
+    box.classList.add('on');
+    document.body.style.overflow = 'hidden';
+    box.querySelector('.lb-close').focus();
+  }
+  function close() {
+    box.classList.remove('on');
+    document.body.style.overflow = '';
+    if (last) last.focus();
+  }
+  items.forEach(function (el) { el.addEventListener('click', function () { open(el); }); });
+  box.addEventListener('click', function (e) { if (e.target === box || e.target.classList.contains('lb-scroll') || e.target.classList.contains('lb-close')) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && box.classList.contains('on')) close(); });
+})();
