@@ -490,3 +490,30 @@ body { font-size: 16px; line-height: 1.6; }
 .stack-dl dt { font-weight: 600; color: var(--ink); }
 .stack-dl dd { color: var(--ink2); line-height: 1.55; }
 @media (max-width: 600px) { .stack-dl div { grid-template-columns: 1fr; gap: 2px; } }
+
+
+/* Before and after */
+.ba4 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+.ba4 figure { margin: 0; }
+.ba4-img { aspect-ratio: 4 / 5; overflow: hidden; border: 1px solid var(--border2); border-radius: var(--radius); background: var(--bg2); }
+.ba4-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.ba4 figcaption { margin-top: 10px; font-size: 14px; color: var(--ink2); line-height: 1.45; }
+.ba4 figcaption b { display: block; color: var(--ink); font-size: 15px; }
+@media (max-width: 600px) { .ba4 { grid-template-columns: 1fr; } }
+
+/* Spec sheet: stack, models, tools, skills as a ruled grid under each project */
+.work4-stack { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 14px; border-top: 1px solid var(--ink); }
+.work4-stack div { display: block; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+.work4-stack div:nth-child(even) { padding-left: 14px; border-left: 1px solid var(--border); }
+.work4-stack div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.work4-stack dt { display: block; width: auto; margin-bottom: 3px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent-text); }
+.work4-stack dd { color: var(--ink); line-height: 1.45; }
+@media (max-width: 600px) { .work4-stack { grid-template-columns: 1fr; } .work4-stack div:nth-child(even) { padding-left: 0; border-left: 0; } }
+
+/* Resume keywords */
+.kw4 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 40px; border-top: 1px solid var(--border2); }
+.kw4 > div { padding: 22px 0; border-bottom: 1px solid var(--border); }
+.kw4 h3 { font-size: 18px; font-weight: 500; margin-bottom: 8px; }
+.kw4 p { font-size: 15px; line-height: 1.7; color: var(--ink2); }
+@media (max-width: 900px) { .kw4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .kw4 { grid-template-columns: 1fr; } }
