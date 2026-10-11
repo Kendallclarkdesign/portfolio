@@ -529,3 +529,11 @@ body { font-size: 16px; line-height: 1.6; }
 .lb-scroll { position: absolute; inset: 0; overflow: auto; padding: 56px 16px 24px; text-align: center; cursor: zoom-out; }
 .lb-scroll img { width: min(1280px, 100%); height: auto; display: inline-block; border-radius: var(--radius); background: #fff; }
 .lb-close { position: absolute; top: 10px; right: 14px; z-index: 2; width: 44px; height: 44px; font-size: 32px; line-height: 1; color: #fff; }
+
+/* Spec grid: Role spans the row, the rest sit in two columns; an unpaired last item spans the row */
+dl.work4-stack > div:nth-child(n) { padding: 10px 14px 10px 0; border-left: 0; grid-column: auto; }
+dl.work4-stack > div:nth-child(1) { grid-column: 1 / -1; }
+dl.work4-stack > div:nth-child(odd):not(:first-child) { padding-left: 14px; border-left: 1px solid var(--border); }
+dl.work4-stack > div:last-child:nth-child(even) { grid-column: 1 / -1; padding-right: 0; }
+@media (max-width: 600px) { dl.work4-stack > div:nth-child(n) { padding-left: 0; border-left: 0; grid-column: 1 / -1; } }
+dl.work4-stack > div:last-child:nth-child(odd):not(:first-child) { grid-column: auto; }
