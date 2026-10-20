@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nina's Cleaning App, UX/UI Case Study | Kendall Clark UX/UI Designer</title>
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:image" content="https://kendallclarkdesign.github.io/portfolio/images/cv-ninas-app.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="A phone-first app for a Berks County cleaning business. Research, Figma wireframes, a design system, and a clickable prototype that turns a quote into a paid booking hold." />
+  <meta name="keywords" content="UX case study, mobile app design, Figma, design system, prototype, small business app, booking deposit, double diamond, Android" />
+  <link rel="canonical" href="https://kendallclarkdesign.github.io/portfolio/case-study-ninas-app" />
+  <meta property="og:title" content="Nina's Cleaning App, UX/UI Case Study | Kendall Clark UX/UI Designer" />
+  <meta property="og:description" content="A phone-first app for a Berks County cleaning business. Research, Figma wireframes, a design system, and a clickable prototype that turns a quote into a paid booking hold." />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="styles/global.css?v=4" />
+  <link rel="stylesheet" href="styles/v4.css?v=24" />
+
+  <style>
+    .cs2 h3 { font-weight: 600; font-size: 20px; letter-spacing: -0.01em; margin: 28px 0 8px; color: var(--ink); }
+    .cs2 p, .cs2 li { max-width: 68ch; }
+    .cs2 figure { margin: 0 0 48px; }
+    .cs2 figure img { width: 100%; height: auto; display: block; border: 1px solid var(--border); }
+    .cs2 figcaption { font-size: 14px; color: var(--ink3); margin-top: 10px; max-width: 80ch; line-height: 1.5; }
+    .cs2 .cs-two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+    .cs2 .cs-three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .cs2 .cs-phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 24px; margin: 8px 0 48px; }
+    .cs2 .cs-phones figure { margin: 0; }
+    .cs2 .cs-phones figure img { border: 0; }
+    .cs2 .cs-find { display: grid; grid-template-columns: 56px 1fr; gap: 6px 16px; padding: 18px 0; border-top: 1px solid var(--border); }
+    .cs2 .cs-find:last-child { border-bottom: 1px solid var(--border); }
+    .cs2 .cs-find b { font-size: 28px; font-weight: 500; letter-spacing: -0.03em; color: var(--accent-text); line-height: 1; }
+    .cs2 .cs-find p { margin: 0; color: var(--ink2); }
+    .cs2 table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 40px; }
+    .cs2 th, .cs2 td { text-align: left; vertical-align: top; padding: 12px 14px 12px 0; border-bottom: 1px solid var(--border); line-height: 1.5; }
+    .cs2 thead th { font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--border2); }
+    .cs2 tbody th { font-weight: 600; color: var(--ink); width: 18%; }
+    .cs2 td { color: var(--ink2); }
+    .cs2 .tbl-wrap { overflow-x: auto; }
+    .cs2 .tbl-wrap table { min-width: 640px; }
+    .cs2 .dd-wrap { margin: 12px 0 40px; border: 1px solid var(--border); padding: 20px 12px 8px; }
+    .cs2 .dd-wrap svg { width: 100%; height: auto; display: block; }
+    .cs2 .dd-notes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 0 0 48px; }
+    .cs2 .dd-notes h3 { margin-top: 0; font-size: 17px; }
+    .cs2 .dd-notes p { font-size: 15px; color: var(--ink2); margin: 0; }
+    .cs2 .flow-wrap { margin: 8px 0 40px; border: 1px solid var(--border); padding: 18px 12px 6px; overflow-x: auto; }
+    .cs2 .flow-wrap svg { min-width: 760px; width: 100%; height: auto; display: block; }
+    .cs2 .cs-quote { font-size: 22px; line-height: 1.35; letter-spacing: -0.02em; color: var(--ink); max-width: 30ch; margin: 24px 0; }
+    @media (max-width: 860px) {
+      .cs2 .cs-two, .cs2 .cs-three, .cs2 .dd-notes { grid-template-columns: 1fr; }
+      .cs2 .cs-phones { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="nav4" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav4-logo" aria-label="Kendall Clark, Home">Kendall Clark</a>
+    <div class="nav4-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+    </div>
+    <a href="contact.html" class="pill" aria-label="Get in touch">Get in touch <span class="pill-ico"><svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4.5M11 3v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="work.html" class="nav-link">Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+  </div>
+
+  <main id="main">
+
+  <section class="cs-hero" aria-label="Case study hero">
+    <div class="cs-hero-inner">
+      <a href="work.html" class="cs-back">&larr; All Work</a>
+      <span class="section-label reveal">Case Study 16 &middot; 21 Connect Digital</span>
+      <h1 class="reveal reveal-delay-1">Nina's Cleaning App</h1>
+      <p class="text-xl reveal reveal-delay-2" style="color:var(--ink2); max-width:640px; margin-top:20px;">A phone-first app for a small cleaning business. It turns a quote into a paid booking hold, so fewer booked jobs cancel.</p>
+    </div>
+  </section>
+
+  <section class="cs-body cs2" aria-label="Case study content">
+    <div class="cs-body-inner">
+      <div class="cs-meta-grid reveal">
+        <div class="cs-meta-item"><div class="cs-meta-label">Client</div><div class="cs-meta-value">Nina's Cleaning Service</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Location</div><div class="cs-meta-value">Bernville, Berks County, PA</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Role</div><div class="cs-meta-value">Product Designer, 21 Connect Digital</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Timeline</div><div class="cs-meta-value">October 2026</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Platform</div><div class="cs-meta-value">Android-first web app</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Stage</div><div class="cs-meta-value">Clickable prototype, user test next</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Deliverables</div><div class="cs-meta-value">Research, 13 wireframes, design system, prototype</div></div>
+        <div class="cs-meta-item"><div class="cs-meta-label">Team</div><div class="cs-meta-value">Solo, design and build</div></div>
+      </div>
+
+      <figure class="reveal">
+        <img src="images/cv-ninas-app.png" alt="Four screens of Nina's Cleaning App on Android phones: Today, New quote, Books, and Calendar" loading="lazy" />
+        <figcaption>Four of the screens I designed and prototyped. All names and numbers are sample data.</figcaption>
+      </figure>
+
+      <div class="cs-section reveal">
+        <h2>Overview</h2>
+        <p>Nina cleans homes in Berks County. Her work comes by word of mouth, and about half of her projected income was disappearing when booked clients canceled. She had never charged a deposit, tracked a lead, or kept a client list.</p>
+        <p>I ran the design from first conversation to a clickable prototype: research, problem framing, 13 low-fidelity screens in Figma, a design system, and a working prototype with three views (Nina, her customer, and her crew). The core idea is a small <strong>booking hold</strong> that the customer pays when they agree to the quote, credited to the final bill.</p>
+        <p>This is a prototype. Nina has not used it with real customers yet, so this page does not claim results. It does show the thinking and the decisions.</p>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>The problem</h2>
+        <p>Nina told me she loses roughly half of her projected income to cancellations. When I asked about the details, the picture was specific:</p>
+        <ul>
+          <li>Cancellations come from new leads and one-time clients. Her regulars do not cancel.</li>
+          <li>She has never charged a deposit or a cancellation fee, so a booking costs the customer nothing to drop.</li>
+          <li>She prices each home by searching the address herself: bedrooms, bathrooms, and the home's value, then a visit to look at it.</li>
+          <li>Her leads live nowhere. She does not track them, so follow-up is by memory.</li>
+          <li>She confirms times by text, with no written terms.</li>
+          <li>Her crew is one or two people besides her, coordinated by text. She uses an Android phone.</li>
+        </ul>
+        <p>She was worried that a fee would scare customers away. That worry shaped almost every decision that followed.</p>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Process</h2>
+        <p>I worked in the double diamond: explore widely, narrow to a problem, explore solutions, then narrow to something buildable. I am currently at the start of the last stage.</p>
+        <div class="dd-wrap">
+          <svg viewBox="0 0 1000 270" role="img" aria-labelledby="ddt ddd">
+            <title id="ddt">The double diamond design process</title>
+            <desc id="ddd">Four stages in two diamonds: Discover and Define, then Develop and Deliver. Deliver is the stage that comes next.</desc>
+            <g fill="rgba(61,107,255,0.10)" stroke="#101828" stroke-width="1.5">
+              <polygon points="20,135 250,30 250,240"/>
+              <polygon points="250,30 480,135 250,240"/>
+              <polygon points="520,135 750,30 750,240"/>
+            </g>
+            <polygon points="750,30 980,135 750,240" fill="none" stroke="#101828" stroke-width="1.5" stroke-dasharray="6 5"/>
+            <g font-family="Hanken Grotesk, system-ui, sans-serif" text-anchor="middle" fill="#101828">
+              <text x="150" y="132" font-size="22" font-weight="600">Discover</text>
+              <text x="150" y="158" font-size="14" fill="#4A5365">Explore the problem</text>
+              <text x="355" y="132" font-size="22" font-weight="600">Define</text>
+              <text x="355" y="158" font-size="14" fill="#4A5365">Frame it</text>
+              <text x="650" y="132" font-size="22" font-weight="600">Develop</text>
+              <text x="650" y="158" font-size="14" fill="#4A5365">Explore solutions</text>
+              <text x="855" y="132" font-size="22" font-weight="600">Deliver</text>
+              <text x="855" y="158" font-size="14" fill="#4A5365">Test and build, next</text>
+            </g>
+          </svg>
+        </div>
+        <div class="dd-notes">
+          <div><h3>Discover</h3><p>Talked with Nina about how a job runs today. Read her website form data and her current texts.</p></div>
+          <div><h3>Define</h3><p>Wrote the problem as questions, set the cancel policy, and mapped who sees what.</p></div>
+          <div><h3>Develop</h3><p>Figma wireframes, a design system, then a clickable prototype Nina can hold on her own phone.</p></div>
+          <div><h3>Deliver</h3><p>Usability test with Nina, a scoped first release, then a 30 day pilot against her baseline.</p></div>
+        </div>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Discover</h2>
+        <p>I started with Nina's real process. The most useful findings were small and practical.</p>
+        <div>
+          <div class="cs-find"><b>1</b><p><strong>The people who cancel are strangers.</strong> New leads and one-time clients. The fix has to work on someone who has no relationship with Nina yet.</p></div>
+          <div class="cs-find"><b>2</b><p><strong>A quote costs the customer nothing.</strong> There is no step where they commit.</p></div>
+          <div class="cs-find"><b>3</b><p><strong>Pricing is a manual lookup.</strong> She searches the address, checks beds, baths, and value, then decides by feel. That is slow and hard to repeat.</p></div>
+          <div class="cs-find"><b>4</b><p><strong>Leads have no home.</strong> Her website form had collected 8 requests in two months, and nothing else tracked who asked.</p></div>
+          <div class="cs-find"><b>5</b><p><strong>She works from her phone.</strong> Texting is her main tool. A desktop dashboard would not fit her day.</p></div>
+          <div class="cs-find"><b>6</b><p><strong>Her crew coordinates by text.</strong> Time off, schedules, and hours all go through her.</p></div>
+        </div>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Define</h2>
+        <p>I turned the findings into four questions to design against:</p>
+        <ul>
+          <li>How might we secure a first-time customer's commitment without making them feel distrusted?</li>
+          <li>How might we put every lead in one place so none gets lost?</li>
+          <li>How might we give Nina a price in minutes from an address?</li>
+          <li>How might we let her crew see their schedule and hours without texting Nina each one?</li>
+        </ul>
+        <h3>The cancel policy is a design decision</h3>
+        <p>The words and rules matter as much as the screens. I drafted options, then Nina chose. She wanted a fee that would not scare people away, so I looked for language that reads as reserving a spot instead of punishing a customer.</p>
+        <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Rule</th><th>What it says</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><th>Name</th><td>"Booking hold," credited to the final bill</td><td>Reads as reserving a spot. I also considered "spot guarantee," "reservation credit," and "schedule commitment."</td></tr>
+            <tr><th>When</th><td>Paid when the customer agrees to the quote</td><td>The customer has money in the job right away, and Nina can treat the booking as real.</td></tr>
+            <tr><th>Free changes</th><td>Free to change or cancel until 40 hours before</td><td>A fair way out. Shown as a clock time, like "Wed 6:00 PM," so nobody has to count hours.</td></tr>
+            <tr><th>Reschedule</th><td>One free reschedule per client</td><td>Most people want to move the date, not cancel. This keeps the job on the calendar.</td></tr>
+            <tr><th>Late change</th><td>Hold is kept, waived once for a first-time issue</td><td>Protects her income without punishing a first mistake.</td></tr>
+            <tr><th>Estimate visit</th><td>Stays free</td><td>She visits homes before pricing, so the hold belongs to the booking, not the visit.</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <h3>From today to the new way</h3>
+        <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Step</th><th>Today</th><th>With the app</th></tr></thead>
+          <tbody>
+            <tr><th>Lead arrives</th><td>A text or a form. It lives nowhere.</td><td>One Leads list with a status for each person.</td></tr>
+            <tr><th>Price</th><td>Searches the address by hand.</td><td>Paste the listing text and the app fills in beds, baths, and size. Her own price rules add it up.</td></tr>
+            <tr><th>Commit</th><td>She texts a time. Nothing binds the customer.</td><td>The customer picks a time, agrees to the terms, and pays the hold in one link.</td></tr>
+            <tr><th>Remind</th><td>Manual texts.</td><td>Reminders two days before and the morning of.</td></tr>
+            <tr><th>Cancel</th><td>Free and silent.</td><td>The Change or cancel sheet shows what will happen before the customer taps.</td></tr>
+            <tr><th>Get paid</th><td>After the clean.</td><td>Hold now, balance after, paid out to her business bank account.</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="flow-wrap">
+          <svg viewBox="0 0 1000 120" role="img" aria-labelledby="flt fld">
+            <title id="flt">Booking flow</title>
+            <desc id="fld">Lead arrives, quote sent by text, customer agrees, customer pays the hold, booked and reminded, clean then balance.</desc>
+            <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#101828"/></marker></defs>
+            <g font-family="Hanken Grotesk, system-ui, sans-serif" font-size="14" text-anchor="middle" fill="#101828">
+              <g fill="#fff" stroke="#101828" stroke-width="1.5">
+                <rect x="6" y="30" width="135" height="60" rx="6"/>
+                <rect x="170" y="30" width="135" height="60" rx="6"/>
+                <rect x="334" y="30" width="135" height="60" rx="6"/>
+                <rect x="498" y="30" width="135" height="60" rx="6" fill="rgba(61,107,255,0.12)"/>
+                <rect x="662" y="30" width="135" height="60" rx="6"/>
+                <rect x="826" y="30" width="135" height="60" rx="6"/>
+              </g>
+              <text x="73" y="65" stroke="none">Lead arrives</text>
+              <text x="237" y="58">Quote sent</text><text x="237" y="76">by text</text>
+              <text x="401" y="58">Customer</text><text x="401" y="76">agrees</text>
+              <text x="565" y="58" font-weight="600">Pays the</text><text x="565" y="76" font-weight="600">booking hold</text>
+              <text x="729" y="58">Booked and</text><text x="729" y="76">reminded</text>
+              <text x="893" y="58">Clean, then</text><text x="893" y="76">balance</text>
+              <g stroke="#101828" stroke-width="1.5" fill="none">
+                <path d="M141,60 H168" marker-end="url(#arr)"/><path d="M305,60 H332" marker-end="url(#arr)"/><path d="M469,60 H496" marker-end="url(#arr)"/><path d="M633,60 H660" marker-end="url(#arr)"/><path d="M797,60 H824" marker-end="url(#arr)"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Three people, three views</h2>
+        <p>The app has three kinds of user, and each one sees a different slice. Getting this wrong would have been the worst mistake in the project, so I made the rules explicit before drawing screens.</p>
+        <div class="tbl-wrap">
+        <table>
+          <thead><tr><th></th><th>Nina</th><th>Customer</th><th>Crew</th></tr></thead>
+          <tbody>
+            <tr><th>People</th><td>All leads and clients</td><td>Only themselves</td><td>Name and town for jobs they are on</td></tr>
+            <tr><th>Prices and holds</th><td>Everything</td><td>Their own quote and hold</td><td>Never</td></tr>
+            <tr><th>Phone numbers</th><td>All</td><td>Their own</td><td>Never. They ask Nina.</td></tr>
+            <tr><th>Books and bank</th><td>Only Nina, behind her fingerprint</td><td>Never</td><td>Never</td></tr>
+            <tr><th>Calendar</th><td>Jobs plus her own Google events, by label</td><td>Their booking</td><td>Jobs and who is working, never her personal events</td></tr>
+            <tr><th>Settings</th><td>Hold, rules, prices, texts</td><td>None</td><td>Their own reminders</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p>"Crew never see prices or customer phone numbers" became a hard rule. In the prototype it is enforced by how the crew screens get their data, not by hiding buttons, and I check it with a test that scans every crew screen for a dollar amount or a phone number. In the real build it has to be enforced in the database.</p>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Wireframes in Figma</h2>
+        <p>I drew 13 low-fidelity screens in Figma in three flows: Nina's Today screen and payout setup, a lead going all the way to a paid booking, and the crew. Gray boxes, one yellow highlight, a handwritten typeface, and no brand colors, so people react to structure and not to taste. Each frame has a short note on why it exists.</p>
+        <figure>
+          <img src="images/ninas-app-wire-r1.jpg" alt="Figma wireframes: Nina's Today screen, a read-me note with the booking rules, and the Get paid setup screen" loading="lazy" />
+          <figcaption>Flow 1. Today answers "what do I do right now." The read-me card holds the policy rules the flow is built on.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ninas-app-wire-r2.jpg" alt="Seven Figma wireframes in a row showing a lead becoming a paid booking: New quote, Find home details, quote with price, text preview, customer estimate, booked, and secure payment" loading="lazy" />
+          <figcaption>Flow 2. A lead becomes a booking. The hold is collected when the customer accepts the quote, in the same link as the price.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ninas-app-wire-r3.jpg" alt="Four Figma wireframes for the crew: Maria's home, team calendar, availability, and Nina's crew approvals" loading="lazy" />
+          <figcaption>Flow 3. Crew home, team calendar, availability, and Nina's approvals.</figcaption>
+        </figure>
+        <p>The wireframes caught problems early. I mislabeled a weekday and a cancel cutoff time, and both were fixed in the Figma file before they reached the prototype.</p>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Design system</h2>
+        <p>Nina already has a brand: navy, gold, cream, and a logo blue, with Cormorant Garamond headings and Jost body text on her website. I pulled those tokens into a small Figma system so the app reads as the same business.</p>
+        <figure>
+          <img src="images/ninas-app-design-system.jpg" alt="Figma design system page: eleven color swatches, three type specimens, buttons, status chips, a lead card, and a page intro card" loading="lazy" />
+          <figcaption>The design system page in Figma: color, type, and the components used most.</figcaption>
+        </figure>
+        <ul>
+          <li><strong>Gold needed two versions.</strong> The bright gold fails contrast as text on cream, so I added a darker gold for text and kept the bright one for buttons and highlights.</li>
+          <li><strong>One handwritten line per screen.</strong> The script face appears once, for the greeting. Used everywhere it would tire her out.</li>
+          <li><strong>Status uses color and words together.</strong> New, Quoted, Booked, and Hold unpaid are labeled, so color is never the only signal.</li>
+          <li><strong>Touch targets stay at 44 pixels or more.</strong> She taps between jobs, often with one hand.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>From wireframe to final</h2>
+        <p>The wireframe fixed the structure. The final version kept it and changed the details that mattered once it was a real screen.</p>
+        <figure>
+          <img src="images/ninas-app-compare-quote.jpg" alt="Side by side: the Figma wireframe of the quote screen and the final prototype screen" loading="lazy" />
+          <figcaption>Quote builder. The price and the booking hold sit together, so the hold feels like part of the quote. The final adds a plain-language intro card at the top.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ninas-app-compare-pay.jpg" alt="Side by side: the Figma wireframe of the payment screen and the final prototype screen" loading="lazy" />
+          <figcaption>Payment. The card box is a stand-in for Stripe's secure field, and the screen says so, because customers worry about who sees their card. The final also offers Google Pay, since Nina and many of her customers use Android.</figcaption>
+        </figure>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Key screens</h2>
+        <div class="cs-phones">
+          <figure><img src="images/ninas-app-today.png" alt="Today screen with a new lead, an unpaid hold, and today's jobs" loading="lazy" /><figcaption><strong>Today.</strong> What needs Nina first: new leads and unpaid holds, then jobs.</figcaption></figure>
+          <figure><img src="images/ninas-app-quote.png" alt="Quote builder with bedrooms, bathrooms, and square footage filled in" loading="lazy" /><figcaption><strong>Quote.</strong> Paste a listing and the app fills in the home. She can change any number.</figcaption></figure>
+          <figure><img src="images/ninas-app-pay.png" alt="Customer payment screen showing a $40 booking hold" loading="lazy" /><figcaption><strong>Customer pays.</strong> The hold, the balance, and the secure payment note in one screen.</figcaption></figure>
+          <figure><img src="images/ninas-app-books.png" alt="Books screen showing cash, money in and out, and a weekly chart" loading="lazy" /><figcaption><strong>Books.</strong> Her money in plain words. Private to her and read only.</figcaption></figure>
+          <figure><img src="images/ninas-app-calendar.png" alt="Calendar showing Google Calendar labels and cleaning jobs" loading="lazy" /><figcaption><strong>Calendar.</strong> Her Google Calendar labels next to her jobs, with a switch for each.</figcaption></figure>
+          <figure><img src="images/ninas-app-crew.png" alt="Crew roster with a new crew member marked Invite sent" loading="lazy" /><figcaption><strong>Crew.</strong> Add or remove people. A new person gets a text to set up their own login.</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Decisions that mattered</h2>
+        <ul>
+          <li><strong>The hold is collected at the quote, not after a visit.</strong> The commitment happens while the customer is still interested.</li>
+          <li><strong>Nina never types bank details into the app.</strong> She connects her bank on the bank's own page and the app gets read-only access. Books asks for her fingerprint every time.</li>
+          <li><strong>The cancel outcome is shown before the tap.</strong> The Change or cancel sheet tells the customer whether it is free, waived, or kept, so there is no surprise charge.</li>
+          <li><strong>Leads and clients are separate lists.</strong> A lead becomes a client when they pay the hold, so Nina can see at a glance who is committed.</li>
+          <li><strong>Every page opens with an icon and two plain sentences.</strong> Nina is new to apps, so each screen says what it is for.</li>
+          <li><strong>The property lookup only reads what Nina pastes.</strong> A free AI model cannot know a house, so it reads beds, baths, and size from listing text and Nina checks the numbers. A paid property data service can replace it later.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>What changed after feedback</h2>
+        <ul>
+          <li><strong>Android.</strong> Nina uses an Android phone, so I redrew the device frames, swapped Face ID for fingerprint, and added Google Pay.</li>
+          <li><strong>Google Calendar labels.</strong> Her calendar mixes her events with her family's. I added a label filter with a switch per label, plus a warning when a cleaning job overlaps one of her own events. Her personal events never reach the crew.</li>
+          <li><strong>Crew management.</strong> Add and remove crew, with a confirmation before anyone loses access.</li>
+          <li><strong>Words.</strong> Screens that talk to Nina now say "you," and the customer screens speak as the business.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Accessibility and content</h2>
+        <ul>
+          <li>Text contrast was checked against the cream background, and gold text uses the darker gold.</li>
+          <li>Buttons and tabs are at least 44 pixels tall, and tabs always carry a label under the icon.</li>
+          <li>Status is never color alone. Every chip has a word.</li>
+          <li>Copy is written at a plain reading level with no jargon. "Booking hold" and "Find home details" replaced terms like "deposit" and "property lookup."</li>
+          <li>Motion in the guide respects the reduced-motion setting.</li>
+        </ul>
+        <p>I have not run a formal accessibility audit or tested with assistive technology yet. That belongs in the build phase.</p>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>The prototype and walkthrough</h2>
+        <p>The clickable prototype runs in a phone browser and installs to the home screen on Android. A guide panel walks through each task with a "show me where" button, and a switcher lets Nina see her own phone, a customer's phone, and a crew member's phone. I also made a four minute walkthrough video, built with Remotion from the same prototype code, so the video cannot drift from the app.</p>
+        <div class="reveal" style="margin:24px 0 8px;">
+          <a href="https://ninas-cleaning-app-demo.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Open the clickable prototype (opens in new tab)">Open the prototype <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Testing and what comes next</h2>
+        <p>What I have checked: the pricing math, the cancel rules in every case, that crew screens never show a price or phone number, that Books is locked until unlocked, that removing a crew member removes their access, and that the calendar filter hides what it should. These are scripted checks against the prototype.</p>
+        <p>What I have not done: a usability test with Nina. That is the first step of Deliver.</p>
+        <h3>Deliver plan</h3>
+        <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Step</th><th>What happens</th></tr></thead>
+          <tbody>
+            <tr><th>Test</th><td>30 minutes on her Android with seven tasks. I watch and help only if she is stuck. Pass mark: five of seven unaided.</td></tr>
+            <tr><th>Scope</th><td>Must have: leads, quotes, the hold, cancel rules, reminders. Should have: calendar and crew. Could have: Books and invoices.</td></tr>
+            <tr><th>Build</th><td>Four phases, starting with the part that stops cancellations. Planned stack: a web app, Supabase for data and logins, Stripe for payments, Twilio for texts, Google Calendar and Plaid for the later phases.</td></tr>
+            <tr><th>Pilot</th><td>30 days on real leads, measured against her baseline cancellation rate from her last 20 bookings.</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>Outcome</h2>
+        <p>There is no outcome to report yet. The prototype is live, Nina can use it on her phone, and the next step is the test. I will add the cancellation rate before and after the pilot here once it exists.</p>
+      </div>
+
+      <div class="cs-section reveal">
+        <h2>What I learned</h2>
+        <ul>
+          <li><strong>Policy is design.</strong> The wording of the hold and the clock-time cutoff did more for trust than any visual choice.</li>
+          <li><strong>Write the access rules first.</strong> Deciding who sees what before drawing screens kept the crew and Books screens honest.</li>
+          <li><strong>A prototype on her own phone beats a deck.</strong> Putting it in Nina's hands turned vague opinions into specific ones, like her Google Calendar labels.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section reveal tools-block">
+        <h2>Tools, stack, and skills</h2>
+        <dl class="stack-dl"><div><dt>Design</dt><dd>Figma (wireframes, design system), Remotion (walkthrough video)</dd></div><div><dt>Prototype</dt><dd>HTML, CSS, JavaScript, Netlify, installable on Android</dd></div><div><dt>Planned build</dt><dd>Supabase, Stripe, Twilio, Google Calendar API, Plaid</dd></div><div><dt>Skills</dt><dd>Mobile UX, user research, information architecture, content design, design systems, prototyping, role-based access design, accessibility</dd></div></dl>
+      </div>
+
+    </div>
+  </section>
+  </main>
+
+  <footer class="foot4" role="contentinfo">
+    <div class="foot4-top">
+      <div>
+        <small>Looking for a designer who ships?</small>
+        <h2>Let's design something that holds up.</h2>
+      </div>
+      <div class="foot4-cols">
+        <div><span>Contact</span><a href="mailto:kendallclarkdesign@gmail.com">kendallclarkdesign@gmail.com</a><a href="contact.html">Contact form</a></div>
+        <div><span>Menu</span><a href="index.html" class="footer-link">Home</a><a href="work.html" class="footer-link">Work</a><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Services</a><a href="resume.html" class="footer-link">Resume</a></div>
+        <div><span>Follow</span><a href="https://www.linkedin.com/in/kendallclarkdev/" target="_blank" rel="noopener noreferrer" aria-label="Kendall Clark on LinkedIn (opens in new tab)">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="foot4-mark" aria-hidden="true">Kendall Clark</div>
+    <div class="foot4-legal"><span>&copy; 2026 Kendall Clark, UX/UI Designer, Los Angeles and New York</span><a href="privacy.html" class="footer-link">Privacy and terms</a></div>
+  </footer>
+
+  <script src="js/main.js?v=9"></script>
+  <script src="js/v4.js?v=1"></script>
+</body>
+</html>
